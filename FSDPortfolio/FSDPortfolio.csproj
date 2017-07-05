@@ -44,6 +44,34 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -182,12 +210,148 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\SyntaxHighlighter\shCore.css" />
+    <Content Include="Content\SyntaxHighlighter\shCoreDefault.css" />
+    <Content Include="Content\SyntaxHighlighter\shCoreDjango.css" />
+    <Content Include="Content\SyntaxHighlighter\shCoreEclipse.css" />
+    <Content Include="Content\SyntaxHighlighter\shCoreEmacs.css" />
+    <Content Include="Content\SyntaxHighlighter\shCoreFadeToGrey.css" />
+    <Content Include="Content\SyntaxHighlighter\shCoreMDUltra.css" />
+    <Content Include="Content\SyntaxHighlighter\shCoreMidnight.css" />
+    <Content Include="Content\SyntaxHighlighter\shCoreRDark.css" />
+    <Content Include="Content\SyntaxHighlighter\shThemeDefault.css" />
+    <Content Include="Content\SyntaxHighlighter\shThemeDjango.css" />
+    <Content Include="Content\SyntaxHighlighter\shThemeEclipse.css" />
+    <Content Include="Content\SyntaxHighlighter\shThemeEmacs.css" />
+    <Content Include="Content\SyntaxHighlighter\shThemeFadeToGrey.css" />
+    <Content Include="Content\SyntaxHighlighter\shThemeMDUltra.css" />
+    <Content Include="Content\SyntaxHighlighter\shThemeMidnight.css" />
+    <Content Include="Content\SyntaxHighlighter\shThemeRDark.css" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\fonts\font-mfizz.css" />
+    <Content Include="css\fonts\font-mfizz.svg" />
+    <Content Include="css\fonts\fontawesome-webfont.svg" />
+    <Content Include="css\jquery.fancybox.css" />
+    <Content Include="css\OLDfont-awesome.css" />
+    <Content Include="css\OLDfonts\fontawesome-webfont.svg" />
+    <Content Include="css\owl.carousel.css" />
+    <Content Include="css\owl.theme.css" />
+    <Content Include="css\style.blue.css" />
+    <Content Include="css\style.default.css" />
+    <Content Include="css\style.green.css" />
+    <Content Include="css\style.pink.css" />
+    <Content Include="css\style.red.css" />
+    <Content Include="css\style.violet.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\about.jpg" />
+    <Content Include="img\BitStripMe.png" />
+    <Content Include="img\blogging01.gif" />
+    <Content Include="img\blogging02.gif" />
+    <Content Include="img\bugtracker01.gif" />
+    <Content Include="img\bugtracker02.gif" />
+    <Content Include="img\carfinder01.gif" />
+    <Content Include="img\carfinder02.gif" />
+    <Content Include="img\Carfinder02.jpg" />
+    <Content Include="img\CharleneD.jpg" />
+    <Content Include="img\customers\botas66.png" />
+    <Content Include="img\customers\cslink.png" />
+    <Content Include="img\customers\evian.png" />
+    <Content Include="img\customers\kofola.png" />
+    <Content Include="img\customers\mdfc.png" />
+    <Content Include="img\customers\vanek.png" />
+    <Content Include="img\Factorials.png" />
+    <Content Include="img\favicon.png" />
+    <Content Include="img\finances01.gif" />
+    <Content Include="img\finances02.gif" />
+    <Content Include="img\home.jpg" />
+    <Content Include="img\HTML5CF01.jpg" />
+    <Content Include="img\html5cf02.gif" />
+    <Content Include="img\JacquesG.jpg" />
+    <Content Include="img\javascript.gif" />
+    <Content Include="img\javascript2.gif" />
+    <Content Include="img\JeanD.jpg" />
+    <Content Include="img\logo-big.png" />
+    <Content Include="img\main-slider1.jpg" />
+    <Content Include="img\main-slider2.jpg" />
+    <Content Include="img\main-slider3.jpg" />
+    <Content Include="img\main-slider4.jpg" />
+    <Content Include="img\marker.png" />
+    <Content Include="img\MathCalc.png" />
+    <Content Include="img\NomasontoM.jpg" />
+    <Content Include="img\parallax.jpg" />
+    <Content Include="img\person-1.jpg" />
+    <Content Include="img\person-2.jpg" />
+    <Content Include="img\person-3.jpg" />
+    <Content Include="img\person-4.jpg" />
+    <Content Include="img\portfolio-1.jpg" />
+    <Content Include="img\portfolio-2.jpg" />
+    <Content Include="img\portfolio-3.jpg" />
+    <Content Include="img\portfolio-4.jpg" />
+    <Content Include="img\portfolio-5.jpg" />
+    <Content Include="img\portfolio-6.jpg" />
+    <Content Include="img\portfolio-7.jpg" />
+    <Content Include="img\portfolio-8.jpg" />
+    <Content Include="img\PortfolioLogo.png" />
+    <Content Include="img\Projects\Blog.png" />
+    <Content Include="img\Projects\budget.png" />
+    <Content Include="img\Projects\BugTracker.png" />
+    <Content Include="img\Projects\CarFinder.png" />
+    <Content Include="img\Projects\Dubuche FSD Resume 2017.png" />
+    <Content Include="img\Projects\html5.png" />
+    <Content Include="img\Projects\javascript.png" />
+    <Content Include="img\Projects\shoppingcart.png" />
+    <Content Include="img\Projects\Webapi.png" />
+    <Content Include="img\Projects\Xamarin.png" />
+    <Content Include="img\shoppingcart01.gif" />
+    <Content Include="img\shoppingcart02.gif" />
+    <Content Include="img\ThomasE.jpg" />
+    <Content Include="img\xamarin00.gif" />
+    <Content Include="img\xamarin01.gif" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\front.js" />
+    <Content Include="js\gmaps.js" />
+    <Content Include="js\jquery-1.11.0.min.js" />
+    <Content Include="js\jquery.cookie.js" />
+    <Content Include="js\jquery.counterup.min.js" />
+    <Content Include="js\jquery.parallax-1.1.3.js" />
+    <Content Include="js\jquery.scrollTo.min.js" />
+    <Content Include="js\js.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\masonry.pkgd.min.js" />
+    <Content Include="js\modernizr-2.6.2.min.js" />
+    <Content Include="js\mycustom.js" />
+    <Content Include="js\myJSLibrary.js" />
+    <Content Include="js\owl.carousel.min.js" />
+    <Content Include="js\respond.min.js" />
+    <Content Include="js\waypoints.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="css\fonts\font-mfizz.eot" />
+    <Content Include="css\fonts\font-mfizz.ttf" />
+    <Content Include="css\fonts\font-mfizz.woff" />
+    <Content Include="css\fonts\fontawesome-webfont.eot" />
+    <Content Include="css\fonts\fontawesome-webfont.ttf" />
+    <Content Include="css\fonts\fontawesome-webfont.woff" />
+    <Content Include="css\fonts\fontawesome-webfont.woff2" />
+    <Content Include="css\fonts\FontAwesome.otf" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\OLDfonts\fontawesome-webfont.eot" />
+    <Content Include="css\OLDfonts\fontawesome-webfont.ttf" />
+    <Content Include="css\OLDfonts\fontawesome-webfont.woff" />
+    <Content Include="css\OLDfonts\FontAwesome.otf" />
+    <Content Include="img\Projects\Dubuche FSD Resume 2017.pdf" />
+    <None Include="Properties\PublishProfiles\cdubuche-portfolio - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\cdubuche-portfolio - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -199,7 +363,53 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shAutoloader.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushAppleScript.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushAS3.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushBash.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushColdFusion.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushCpp.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushCSharp.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushCss.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushDelphi.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushDiff.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushErlang.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushGroovy.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushJava.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushJavaFX.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushJScript.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushPerl.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushPhp.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushPlain.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushPowerShell.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushPython.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushRuby.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushSass.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushScala.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushSql.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushVb.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushXml.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shCore.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shLegacy.js" />
+    <Content Include="Scripts\SyntaxHighlighter\styles\shCore.css" />
+    <Content Include="Scripts\SyntaxHighlighter\styles\shCoreDefault.css" />
+    <Content Include="Scripts\SyntaxHighlighter\styles\shCoreDjango.css" />
+    <Content Include="Scripts\SyntaxHighlighter\styles\shCoreEclipse.css" />
+    <Content Include="Scripts\SyntaxHighlighter\styles\shCoreEmacs.css" />
+    <Content Include="Scripts\SyntaxHighlighter\styles\shCoreFadeToGrey.css" />
+    <Content Include="Scripts\SyntaxHighlighter\styles\shCoreMDUltra.css" />
+    <Content Include="Scripts\SyntaxHighlighter\styles\shCoreMidnight.css" />
+    <Content Include="Scripts\SyntaxHighlighter\styles\shCoreRDark.css" />
+    <Content Include="Scripts\SyntaxHighlighter\styles\shThemeDefault.css" />
+    <Content Include="Scripts\SyntaxHighlighter\styles\shThemeDjango.css" />
+    <Content Include="Scripts\SyntaxHighlighter\styles\shThemeEclipse.css" />
+    <Content Include="Scripts\SyntaxHighlighter\styles\shThemeEmacs.css" />
+    <Content Include="Scripts\SyntaxHighlighter\styles\shThemeFadeToGrey.css" />
+    <Content Include="Scripts\SyntaxHighlighter\styles\shThemeMDUltra.css" />
+    <Content Include="Scripts\SyntaxHighlighter\styles\shThemeMidnight.css" />
+    <Content Include="Scripts\SyntaxHighlighter\styles\shThemeRDark.css" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -213,7 +423,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\OldIndex.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
