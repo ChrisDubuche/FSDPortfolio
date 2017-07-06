@@ -236,6 +236,7 @@
     <Content Include="css\fonts\font-mfizz.svg" />
     <Content Include="css\fonts\fontawesome-webfont.svg" />
     <Content Include="css\jquery.fancybox.css" />
+    <Content Include="css\my2ndcustom.css" />
     <Content Include="css\OLDfont-awesome.css" />
     <Content Include="css\OLDfonts\fontawesome-webfont.svg" />
     <Content Include="css\owl.carousel.css" />
