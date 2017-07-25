@@ -2,6 +2,10 @@
     .reference, .reference-item, .overlay {
         border-radius: 15px;
     }
+
+    .r4input1 {
+        padding-left: 10px;
+    }
 </style>
 
 <script>
@@ -14,6 +18,14 @@
     function myFunction() {
         window.open("http://cdubuche-blog.azurewebsites.net");
     }
+
+    //attempting to delay the opening of the modal
+
+    //function aFunction() {
+    //    setTimeout(function() {
+    //        $(testModal).modal();
+    //    }, 2000);
+    //}
 </script>
 
 <div id="all">
@@ -97,8 +109,8 @@
                         <div class="icon">
                             <i class="fa fa-free-code-camp"></i>
                         </div>
-                        <h3 class="heading">Full Stack</h3>
-                        <p>As a Full Stack Developer I'm capable of performing tasks at any level of the technical stack no matter where they reside.</p>
+                        <h3 class="heading">Mobile</h3>
+                        <p>As a Mobile Developer I create & test apps to ensure they work on multiple platforms. I make the necessary changes & tweaks, and release it to the various app stores. </p>
                     </div>
 
                 </div>
@@ -135,6 +147,24 @@
                 </div>
 
                 <ul class="owl-carousel testimonials same-height-row" data-animate="fadeInUp">
+                    <li class="item">
+                        <div class="testimonial same-height-always">
+                            <div class="text">
+                                <p>I've worked with many developers over the last few years but he is the first that I knew cared about my goals. </p>
+                            </div>
+
+                            <div class="bottom">
+                                <div class="icon">
+                                    <i class="fa fa-quote-left"></i>
+                                </div>
+                                <div class="name-picture">
+                                    <img class="" alt="" src="~/img/JacquesG.jpg">
+                                    <h5>Jacques G.</h5>
+                                    <p>Altice USA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li class="item">
                         <div class="testimonial same-height-always">
                             <div class="text">
@@ -190,24 +220,6 @@
                     <li class="item">
                         <div class="testimonial same-height-always">
                             <div class="text">
-                                <p>I've worked with many developers over the last few years but he is the first that I knew cared about my goals. </p>
-                            </div>
-
-                            <div class="bottom">
-                                <div class="icon">
-                                    <i class="fa fa-quote-left"></i>
-                                </div>
-                                <div class="name-picture">
-                                    <img class="" alt="" src="~/img/JacquesG.jpg">
-                                    <h5>Jacques G.</h5>
-                                    <p>Altice USA</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="testimonial same-height-always">
-                            <div class="text">
                                 <p>His customer/client service skills are exemplary as I have always been able to reach him via phone or email.</p>
                             </div>
 
@@ -228,47 +240,49 @@
         </div>
     </div>
     <!-- *** SHOWCASE ***
-    _________________________________________________________ -->
-    <div class="section text-parallax parallax-image1 services" id="services2">
-        <div class="container">
-            <div class="row showcase">
-                <div class="col-md-4 col-sm-4" data-animate="fadeInUp">
-                    <div class="item">
-                        <div class="icon">
-                            <i class="fa fa-align-justify"></i>
+        
+        _________________________________________________________ -->
+    @*<div class="section text-parallax parallax-image1 services" id="services2">
+            <div class="container">
+                <div class="row showcase">
+                    <div class="col-md-4 col-sm-4" data-animate="fadeInUp">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="fa fa-align-justify"></i>
+                            </div>
+                            <h4>
+                                <span class="counter"> </span><br>
+                                Websites
+                            </h4>
                         </div>
-                        <h4>
-                            <span class="counter">9</span><br>
-                            Websites
-                        </h4>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-4" data-animate="fadeInUp">
-                    <div class="item">
-                        <div class="icon">
-                            <i class="fa fa-users"></i>
+                    <div class="col-md-4 col-sm-4" data-animate="fadeInUp">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="fa fa-users"></i>
+                            </div>
+                            <h4>
+                                <span class="counter"> </span><br>
+                                Satisfied Clients
+                            </h4>
                         </div>
-                        <h4>
-                            <span class="counter">5</span><br>
-                            Satisfied Clients
-                        </h4>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-4" data-animate="fadeInUp">
-                    <div class="item">
-                        <div class="icon">
-                            <i class="fa fa-copy"></i>
+                    <div class="col-md-4 col-sm-4" data-animate="fadeInUp">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="fa fa-copy"></i>
+                            </div>
+                            <h4>
+                                <span class="counter"> </span><br>
+                                Projects
+                            </h4>
                         </div>
-                        <h4>
-                            <span class="counter">17</span><br>
-                            Projects
-                        </h4>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="dark-mask"></div>
-    </div>
+            <div class="dark-mask"></div>
+        </div>*@
+
     <!-- *** REFERENCES IMAGE ***
     _________________________________________________________ -->
     <div class="section" id="portfolio">
@@ -322,7 +336,7 @@
 
                     <div class="reference-item" data-category="Javascript">
                         <div class="reference">
-                            <a id="customModalJS" href="#" data-toggle="modal" data-target="#testModal">
+                            <a id="customModalJS" href="#" data-toggle="modal" data-target="#testModal" onclick="aFunction()">
                                 <img src="~/img/projects/javascript.png" class="img-responsive" alt="" />
 
                                 <div class="overlay">
@@ -366,17 +380,17 @@
 
                     <div class="reference-item" data-category="Blog">
                         <div class="reference">
-                            <a href="#" onclick="myFunction()">  
+                            <a href="#" onclick="myFunction()">
                                 <img src="~/img/projects/blog.png" class="img-responsive" alt="" />
 
-                                <div class="overlay" >                                   
+                                <div class="overlay">
                                     <h3 class="reference-title">Personal Blog</h3>
-                                    <p>Sharing my thoughts</p>                                  
+                                    <p>Sharing my thoughts</p>
                                 </div>
-                                
+
                             </a>
 
-                            <div class="sr-only reference-description" data-images="img/blogging01.gif,img/blogging02.gif" >
+                            <div class="sr-only reference-description" data-images="img/blogging01.gif,img/blogging02.gif">
 
                                 <p>A blog is a frequently updated onl ne personal journal or diary. It is a place to express yourself to the world. A place to share your thoughts and your passions.</p>
 
@@ -500,14 +514,15 @@
         <div class="container">
             <div class="col-md-12">
 
-                <h5>***Under Construction***</h5>
+                @*<h5>***Under Construction***</h5>*@
                 <h2 class="title">Contact me</h2>
-                <h5>***Under Construction***</h5>
+                @*<h5>***Under Construction***</h5>*@
 
                 <div class="row">
-
+                    //
                     <div class="col-md-8 col-md-offset-2">
                         <form id="contact-form" method="post" action="contact.php">
+                            @*Change action to correctly send email*@
 
                             <div class="messages">
                             </div>
@@ -516,19 +531,19 @@
 
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <input type="text" name="name" class="form-control" placeholder="Your firstname *" required="required">
+                                        <input type="text" name="name" class="form-control" placeholder="Your first name" required="required">
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" name="surname" class="form-control" placeholder="Your lastname *" required="required">
+                                        <input type="text" name="surname" class="form-control" placeholder="Your last name" required="required">
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" name="email" class="form-control" placeholder="Your email *" required="required">
+                                        <input type="text" name="email" class="form-control" placeholder="Your email address" required="required">
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" name="phone" class="form-control" placeholder="Your phone">
+                                        <input type="number" name="phone" class="form-control" placeholder="Your phone number">
                                     </div>
                                     <div class="col-md-12">
-                                        <textarea name="message" class="form-control" placeholder="Message for me *" rows="4" required="required"></textarea>
+                                        <textarea name="message" class="form-control" placeholder="Your message for me" rows="4" required="required"></textarea>
                                     </div>
                                     <div class="col-md-12 text-center">
                                         <input type="submit" class="btn btn-primary btn-lg" value="Send message">
@@ -686,7 +701,7 @@
                             <br>
                         </form>
                         <button type="button" class="btn btn-primary" onclick="fizzBuzz()">Let's Go!</button>
-                        <div class="row col-md-12" id="r3output1" style="word-wrap: break-word; height: 100px"></div>
+                        <div class="row col-md-12" id="r3output1" style="word-wrap: break-word; height: 180px"></div>
                         <pre style="border-radius: 9px;" class="brush: js;">
                                 function fizzBuzz() {
                                 var num01 = parseInt(document.getElementById("r3input1").value);
@@ -714,10 +729,8 @@
                     <div id="menu4" class="tab-pane fade">
                         <h3>Is it a ¿¿¿Palindrome???</h3>
                         <p>Type a word in <b>lowercase</b> and see if it's the same backwards and forwards a.k.a. a <strong>Palindrome</strong>. *CaSe SeNsItIvE eXeCiSe*</p>
-                        <div class="row">
-                            <input type="text" id="r4input1" />
-                            <button class="btn btn-primary" onclick="Palindrome()">Let's Go!</button>
-                        </div>
+                        <input type="text" id="r4input1" />
+                        <button class="btn btn-primary" onclick="Palindrome()">Let's Go!</button>
                         <div class="row">
                             <span id="r4output1"></span>
                         </div>
@@ -738,7 +751,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" onclick="clrFunction()" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>

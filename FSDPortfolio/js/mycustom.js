@@ -158,3 +158,14 @@ function Palindrome() {
 $('#btnresume').click(function() {
     $('#myresume').toggle('show');
 });
+
+//$(document).ready(function(){
+//});
+
+//Clear the math data from the modals once they're closed
+//function clrFunction() {
+//    document.getElementById("r1output1").reset();
+//    document.getElementById("r2output2").reset();
+//    document.getElementById("r3output1").reset();
+//    document.getElementById("r4output1").reset();
+//}

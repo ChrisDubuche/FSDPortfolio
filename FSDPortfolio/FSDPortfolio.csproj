@@ -18,7 +18,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44312</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -203,6 +203,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\EmailModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -353,6 +354,9 @@
     <Content Include="css\OLDfonts\fontawesome-webfont.woff" />
     <Content Include="css\OLDfonts\FontAwesome.otf" />
     <Content Include="img\Projects\Dubuche FSD Resume 2017.pdf" />
+    <Content Include="private.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Properties\PublishProfiles\cdubuche-portfolio - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\cdubuche-portfolio - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -477,7 +481,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50144</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50144/</IISUrl>
+          <IISUrl>https://localhost:44312/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
