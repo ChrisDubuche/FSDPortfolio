@@ -21,3 +21,9 @@
     padding: 25px 15px;
 }
 
+h2 p {
+    font-family: 'Roboto Slab', serif;
+    /*font-weight: 700;*/
+    /*text-shadow: 1px 1px 1px #ffffff;*/
+}
+
