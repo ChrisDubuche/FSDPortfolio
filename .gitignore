@@ -240,3 +240,10 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+# Personal Security Information
+private.config
+Web.Release.config
+Configuration.cs
+
+

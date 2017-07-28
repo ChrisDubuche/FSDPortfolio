@@ -354,9 +354,7 @@
     <Content Include="css\OLDfonts\fontawesome-webfont.woff" />
     <Content Include="css\OLDfonts\FontAwesome.otf" />
     <Content Include="img\Projects\Dubuche FSD Resume 2017.pdf" />
-    <Content Include="private.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="private.config" />
     <None Include="Properties\PublishProfiles\cdubuche-portfolio - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\cdubuche-portfolio - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
