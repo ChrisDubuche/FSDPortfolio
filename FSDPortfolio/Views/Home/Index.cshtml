@@ -20,7 +20,11 @@
     }
 
     function bugFunction() {
-        window.open("http://cdubuche-bugtracker.azurewebsites.net/");
+        window.open("http://cdubuche-bugtracker.azurewebsites.net");
+    }
+
+    function finFunction() {
+        window.open("http://cdubuche-financialportal.azurewebsites.net");
     }
 
     //attempting to delay the opening of the modal
@@ -430,7 +434,7 @@
 
                     <div class="reference-item" data-category="FinancialPlanner">
                         <div class="reference">
-                            <a href="#">
+                            <a href="#" onclick="finFunction()">
                                 <img src="~/img/projects/budget.png" class="img-responsive" alt="" />
 
                                 <div class="overlay">
