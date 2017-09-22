@@ -42,7 +42,7 @@ namespace FSDPortfolio.Controllers
                     var body = "<p>Email From: <bold>{0}</bold>({1})</p><p>My message to you:</p><p>{2}</p> <p>This is a message from your portfolio site. The name and the email of the contacting person is above.</p>";
                     var from = "Christian Dubuche's Blog<cdubuche@outlook.com>";
                     /* model.Body = "This is a message from your portfolio site. The name and the email of the contacting person is above."*/
-                    ;
+                    
 
                     var email = new MailMessage(from, ConfigurationManager.AppSettings["emailto"])
                     {
