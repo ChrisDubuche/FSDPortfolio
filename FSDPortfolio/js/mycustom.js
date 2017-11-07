@@ -1,34 +1,4 @@
-﻿//Finding the least, greatest, mean, sum and product of 5 numbers entered by user
-
-// 1. Go get my data - located in specified 'ids'
-// 2. function calc() handles all of 5 inputs and all 5 math problems
-
-//function NewCalc()
-//{
-//    //get the data
-//    var data = GetDataBySelector("#MathProblems");
-//    var operator = data[data.length - 1];
-//    var value = 0;
-//    switch (operator) {
-//        case '+':
-//        case '*':
-//        case '/':            for (var loop = 0; loop <= 4; loop++) {
-//                if (operator == '+') {
-//                    value += Number(data[loop]);
-//                }
-//                else {
-//                    value *= Number(data[loop]);
-//                }
-//            }
-//            break;
-//        case '<':
-//            break;
-//        case '>':
-//            break;
-//        default:
-//    }
-//    $("#r1output1").val(value);
-//}
+﻿
 
 function calc() {
 
@@ -55,23 +25,6 @@ function calc() {
         document.getElementById("r1output1").value = Math.max(num1, num2, num3, num4, num5);
     }
 
-
-
-    //Look into using a switch statement as an alternate method
-    //switch (oper) {
-    //    case '+':
-    //        //do this
-    //        break;
-    //    case '*':
-    //    case '-':
-    //        //do this instead
-    //        break;
-    //    case '*':
-    //        //do this...
-    //        break;
-    //    default:
-    //        //do this
-    //}
 }
 
 function factorialize(num) {
@@ -129,16 +82,6 @@ function fizzBuzz() {
     document.getElementById("r3output1").innerHTML = output.substring(0, output.length-2);
 }
 
-//FIZZBUZZ validation code so invalid numbers can't be entered 
-//$('#r3input1', '#r3input2').blur(function () {
-//    if (Number($(this).val()) (i < 1 || i > 100)) {
-//        $(this).val();
-//        $('#r3output1').val("Not B/W 1 & 100");
-//    }
-//});
-
-
-// you're going to need a substring function to remove the last comma from the results (trailing comma)
 
 function Palindrome() {
     var word = $('#r4input1').val();
@@ -158,14 +101,3 @@ function Palindrome() {
 $('#btnresume').click(function() {
     $('#myresume').toggle('show');
 });
-
-//$(document).ready(function(){
-//});
-
-//Clear the math data from the modals once they're closed
-//function clrFunction() {
-//    document.getElementById("r1output1").reset();
-//    document.getElementById("r2output2").reset();
-//    document.getElementById("r3output1").reset();
-//    document.getElementById("r4output1").reset();
-//}
