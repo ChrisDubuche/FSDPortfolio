@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -356,6 +357,7 @@
     <Content Include="img\Projects\Dubuche FSD Resume 2017.pdf" />
     <Content Include="private.config" />
     <Content Include="img\Projects\Christian Dubuche - Resume.pdf" />
+    <Content Include="img\Projects\Christian Dubuche - FSD Resume.pdf" />
     <None Include="Properties\PublishProfiles\cdubuche-portfolio - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\cdubuche-portfolio - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
