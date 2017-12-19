@@ -358,6 +358,7 @@
     <Content Include="private.config" />
     <Content Include="img\Projects\Christian Dubuche - Resume.pdf" />
     <Content Include="img\Projects\Christian Dubuche - FSD Resume.pdf" />
+    <Content Include="img\Projects\Christian Dubuche %28Projects%29 Resume.pdf" />
     <None Include="Properties\PublishProfiles\cdubuche-portfolio - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\cdubuche-portfolio - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
