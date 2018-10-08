@@ -307,7 +307,6 @@
     <Content Include="img\Projects\budget.png" />
     <Content Include="img\Projects\BugTracker.png" />
     <Content Include="img\Projects\CarFinder.png" />
-    <Content Include="img\Projects\Dubuche FSD Resume 2017.png" />
     <Content Include="img\Projects\html5.png" />
     <Content Include="img\Projects\javascript.png" />
     <Content Include="img\Projects\shoppingcart.png" />
@@ -354,11 +353,8 @@
     <Content Include="css\OLDfonts\fontawesome-webfont.ttf" />
     <Content Include="css\OLDfonts\fontawesome-webfont.woff" />
     <Content Include="css\OLDfonts\FontAwesome.otf" />
-    <Content Include="img\Projects\Dubuche FSD Resume 2017.pdf" />
     <Content Include="private.config" />
-    <Content Include="img\Projects\Christian Dubuche - Resume.pdf" />
-    <Content Include="img\Projects\Christian Dubuche - FSD Resume.pdf" />
-    <Content Include="img\Projects\Christian Dubuche %28Projects%29 Resume.pdf" />
+    <Content Include="img\Projects\Dubuche - Resume%28ATS%29.pdf" />
     <None Include="Properties\PublishProfiles\cdubuche-portfolio - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\cdubuche-portfolio - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
